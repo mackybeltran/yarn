@@ -1,0 +1,19 @@
+@import './theme.scss';
+
+html {
+    height: 100%;
+
+    > body {
+        margin: 0;
+        height: 100%;
+
+        > #app {
+            height: 100%;
+        }
+    }
+}
+
+button { // avoid using this universal styling as much as possible
+    font-family: inherit;
+    cursor: pointer;
+}
