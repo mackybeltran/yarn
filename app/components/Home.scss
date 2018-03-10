@@ -1,0 +1,29 @@
+@import '../theme.scss';
+
+.home {
+    > ._title {
+            font-family: 'Pacifico', cursive;
+            color: #37474f;
+            font-size: 1000%;
+            margin: 0.8em 1.4em;
+    }
+    > ._hand-pointer {
+            cursor: pointer;
+            width: 1%;
+    }
+    > ._btn-build {
+            margin-left: 35px;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+    }
+    > ._link {
+          font-family: 'Arvo', serif;
+          color: #37474f;
+          margin: 10px;
+          font-size: 200%;
+          text-shadow: 0.5px 0.5px #37474f;
+          margin-left: 17px;
+    }
+
+}
