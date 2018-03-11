@@ -1,12 +1,11 @@
 import React, { PureComponent } from 'react';
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 import './Home.scss';
 import bulb from './public/bulb.png';
 import controller from './public/controller.png';
 
 class Home extends PureComponent {
-    // <NavLink to="/storylist">Stories</NavLink>
     render() {
         return <div className="home">
             <h1 className="_title">Yarn</h1>
@@ -22,7 +21,7 @@ class Home extends PureComponent {
                 <NavLink to="/storylist">
                     <h6 className="_link-label">existing</h6>
                 </NavLink>
-            <div>
+            </div>
 
             <NavLink to="/storylist">
                 <div className="_button-container">
