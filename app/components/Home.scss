@@ -17,13 +17,14 @@
             height: 100px;
             width: 100px;
     }
-    > ._link {
+    > ._link-off {
           font-family: 'Arvo', serif;
           color: #37474f;
           margin: 10px;
           font-size: 200%;
           text-shadow: 0.5px 0.5px #37474f;
           margin-left: 17px;
+          display: none;
     }
 
 }

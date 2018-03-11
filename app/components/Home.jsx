@@ -6,6 +6,18 @@ import bulb from './public/bulb.png';
 import controller from './public/controller.png';
 
 class Home extends PureComponent {
+      constructor(props){
+        super(props);
+        this._handleLinkView = this._handleLinkView.bind(this);
+        this.state = {
+            linkDisplay: false
+        }
+    }
+
+    _handleLinkView(){
+        this.state.linkDisplay = false ? this.setState({linkDisplay: true}) : this.setState({linkDisplay: false})
+    }
+
     render() {
         return <div className="home">
             <h1 className="_title">Yarn</h1>
@@ -16,11 +28,11 @@ class Home extends PureComponent {
 
             <div className="_nav-menu">
                 <NavLink to="/new">
-                    <h6 className="_link-label">new</h6>
+                    <h6 className={this.state.linkDisplay = false ? '_link-off' : '_link-on'}>new</h6>
                 </NavLink>
                 <NavLink to="/storylist">
-                    <h6 className="_link-label">existing</h6>
-                </NavLink>
+                    <h6 className={this.state.linkDisplay = false ? '_link-off' : '_link-on'}>existing</h6>
+                  </NavLink>
             </div>
 
             <NavLink to="/storylist">

@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import Home from './Home.jsx';
 import New from './New.jsx';
 import Storylist from './Storylist.jsx';
